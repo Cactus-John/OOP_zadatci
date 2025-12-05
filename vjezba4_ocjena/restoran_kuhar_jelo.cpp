@@ -77,11 +77,9 @@ public:
 
 	Restoran& operator = (const Restoran& r) {
 		if (this != &r) {
-			for (int i = 0; i < jela.size(); i++) {
+			for (int i = 0; i < jela.size(); i++)
 				delete jela[i];
-				jela.clear();
-			}
-
+			jela.clear();
 			for (int i = 0; i < r.jela.size(); i++) {
 				jela.push_back(new Jelo);
 				*jela[i] = *r.jela[i];
