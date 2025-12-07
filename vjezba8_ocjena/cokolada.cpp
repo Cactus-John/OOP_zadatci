@@ -51,9 +51,6 @@ public:
 		return tezina;
 	}
 
-	virtual ~Crna() {
-		cout << "Destruktor Crna" << endl;
-	}
 };
 
 class CrnaBrusnica : public Crna {
